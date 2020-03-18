@@ -1,0 +1,77 @@
+<?php>
+ Class Empregado{
+  public  $nome1;
+  public $nome2;
+  public $salarioMensal;
+  
+  public function_construtor(){
+  $this -> nome1 = "Daiane";
+  $this -> nome2 = "Escobar Dias";
+  $this  -> salarioMensal =  900,00;
+  }
+  
+  public funtion setNome1 ($recebe){
+  return $this -> nome1 = $recebe;
+}
+  public function getNome1(){
+  return $this -> nome1;
+  }
+  
+  public function setNome2 ($recebe1){
+  return $this -> nome2 = $recebe1;
+  }
+  
+  public function getNome2(){
+  retunt $this -> nome2;
+  }
+  
+  public function setSalarioMensal($recebe2){
+  return $this -> salarioMensal = $recebe2;
+  }
+  
+  public function getSalarioMensal(){
+  return $this -> salarioMensal;
+  }
+  
+  função publica setSalarioMensal(){
+  retornar $this -> salarioMensal = $this -> salarioMensal * 12;
+  }
+  
+    função pública getSalarioMensal () {
+    retornar $ this -> salarioMensal;
+  }
+  função pública validaSalarioMensal () {
+    if ($ this-> salarioMensal <0) {
+      $ this-> salarioMensal = 0,0;
+    }
+  }
+  public function aumentasalarioMensal () {
+    $ porcen = ($ this-> salarioMensal * 10) / 100;
+    $ this-> salarioMensal = $ this-> salarioMensal + $ porcen;
+  }
+ 
+ // Empregado 1
+
+
+$ empregado1 = novos Empregados ();
+$ empregado1-> salarioMensal ();
+$ empregado1-> setsalarioMensal ();
+echo "O salário anual de {$ empregado1-> getNome1 ()} {$ empregado1-> getNome2 ()} é R$ {$ empregado1 -> getSalarioMensal ()} \ n"; 
+$ empregado1 -> aumentaSalarioMensal ();
+$ empregado1-> setSalarioMensal ();
+echo "O salário anual de {$ emp1-> getNome1 ()} recebe 10% e agora é de R$ {$ empregado1-> getSalarioMensal ()} \ n";
+
+// Empregado 2
+
+$ empregado2 = novos Empregados ();
+$ empregado2 -> setNome1 ("Angelica");
+$ empregado2 -> setNome1 ("Escobar");
+$ empregado2-> setSalarioMensal (1000);
+$ empregado2-> validaSalarioMensal ();
+$ empregado2-> setSalarioMensal ();
+echo "O salário anual de {$ empregado2-> getNome1 ()} {$ empregado2-> getNome2 ()} é R $ {$ empregado2-> getSalarioMensal ()} \ n"; 
+$ empregado2 -> aumentaSalarioMensal ();
+$ empregado2-> setSalarioMensal ();
+echo "O salário anual de {$ empregado2-> getNome1 ()} recebe 10% e agora é de R$ {$ empregado2-> getSalarioMensal ()} \ n";
+ 
+?>
